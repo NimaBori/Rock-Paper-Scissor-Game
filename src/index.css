@@ -1,0 +1,106 @@
+body {  
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;    
+  align-items: center;
+  justify-content: center;    
+  height: 100vh;
+  position: relative;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.title {  
+  position: absolute; 
+  background-color: skyblue;
+  top: 0;
+  left: 0;
+  /* padding: 30px 0; */
+  height: 6rem;
+  width: 100%; 
+  text-align: center; 
+  font-size: 21px; 
+  font-weight: 500;
+}
+
+.main-container {
+  position: absolute;  
+  top: 7rem;
+  left: 25%;  
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  padding-bottom:3rem;  
+}
+
+.score {  
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  text-transform: capitalize;    
+}
+
+.info-container {
+  border: 1px solid rgba(220, 20, 60, 0.486);    
+  width: 100px;
+  margin-left: 10px;  
+  font-size: 21px;
+  text-shadow: 1px 1px 1px lightseagreen;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 18px;
+  }
+
+.player-selection {  
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 0;
+}
+
+.rock, .scissors, .paper {
+  width: 80px;
+  height: 80px; 
+  padding: 0 3rem; 
+  border: none;  
+  cursor: pointer;
+  transition: color 0.15s;
+  color: rgb(181, 133, 9);
+}
+
+.rock:hover, .scissors:hover, .paper:hover {
+  color: rgb(249, 106, 106);
+}
+
+.rock:active, .scissors:active, .paper:active {
+  color: red
+}
+
+.picks {
+  display: grid;
+  grid-template-columns: 80px 150px 80px;
+  place-items: center;
+  font-size: 21px;
+  color: lightseagreen;
+}
+
+.player-pick, .comp-pick {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.winner {
+  color: crimson;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.picks .fs {
+  width: 40px;
+  height: 40px;
+  color: goldenrod;
+}
